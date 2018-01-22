@@ -55,7 +55,7 @@ public class AddidasHomePage extends WebDriverBaseTestPage<WebDriverTestPage   >
 		NaviagationTestPage nav= new NaviagationTestPage();
 		cart.verifyProductOnCartPage();
 		nav.getBackToHomePage();
-		System.out.println("trest");
+		
 		
 		
 	}
