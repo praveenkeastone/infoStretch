@@ -1,0 +1,3 @@
+closebutton.cartpage.addidas = {\"locator\":\"id=com.adidas.app:id/button_close\",\"desc\":\"closebutton on cartpage\"}
+navigatebutton.proddetails.addidas = {\"locator\":\"accessibility id=Navigate up\",\"desc\":\"navigatebutton on productdetails\"}
+homeicon.homepage.addidas = {\"locator\":\"id=com.adidas.app:id/action_feed\",\"desc\":\"homeicon on homepage\"}

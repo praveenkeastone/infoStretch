@@ -1,0 +1,3 @@
+cart.homepage.addidas = {\"locator\":\"xpath=(//android.widget.RelativeLayout)[3]\",\"desc\":\"cart on homepage\"}
+productsearch.homepage.addidas = {\"locator\":\"id=com.adidas.app:id/action_search\",\"desc\":\"productsearch on homepage\"}
+profileicon.homepage.addidas = {\"locator\":\"id=com.adidas.app:id/action_profile\",\"desc\":\"profileicon on homepage\"}

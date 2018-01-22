@@ -1,0 +1,6 @@
+textbox.productsearch.addidas = {\"locator\":\"id=com.adidas.app:id/search_field\",\"desc\":\"searchbox on adproductsearchpage\"}
+dropdown.womenandmenandclid.productsearch.addidas = {\"locator\":\"id=com.adidas.app:id/productCategoryClickableArea\",\"desc\":\"dropdownmenu on adproductsearchpage\"}
+morworchildcategory.productsearch.addidas = {\"locator\":\"xpath=//android.widget.TextView[@text='%s']\",\"desc\":\"morworchild on adproductsearch\"}
+prodcategory.productsearch.addidas = {\"locator\":\"xpath=//android.widget.TextView[@text='%s']\",\"desc\":\"prodcategory on adproductsearch\"}
+maincategory.productsearch.addidas = {\"locator\":\"xpath=//android.widget.TextView[@text='%s']\",\"desc\":\"maincategory on adproductsearch\"}
+prodpurpose.productsearch.addidas = {\"locator\":\"xpath=//android.widget.TextView[@text='%s']\",\"desc\":\"prodpurpose on adproductsearch\"}

@@ -1,0 +1,10 @@
+com\addidasmobile\page\ProductSearchPage.class
+com\addidasmobile\page\CartTestPage.class
+com\addidasmobile\bean\AddidasBean.class
+com\addidasmobile\page\NaviagationTestPage.class
+com\addidasmobile\component\CartComponent.class
+com\addidasmobile\StepsBackLog.class
+com\addidasmobile\component\AddidasProductComponent.class
+com\addidasmobile\page\AddidasHomePage.class
+com\addidasmobile\page\ProductSearchResultPage.class
+com\addidasmobile\page\ProdDetailsPage.class

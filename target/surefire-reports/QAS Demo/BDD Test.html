@@ -1,0 +1,421 @@
+<html>
+<head>
+<title>TestNG:  BDD Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BDD Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jan 17 17:16:15 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>745 seconds (745949 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qmetry.qaf.automation.step.client.DataDrivenScenario.AddidasOrderVerification()'><b>AddidasOrderVerification</b><br>Test class: com.qmetry.qaf.automation.step.client.DataDrivenScenario (AddidasOrderVerification)<br>Test method: end to end<br>Parameters: {genderOrAge=Men, prodcCategory=Shoes, prodPurpose=Running, prodNumber=3, size=7.5}<br/>
+<a href="#Output-2095677157" onClick='toggleBox("Output-2095677157", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2095677157" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2095677157">
+Ultraboost Shoes<br/>
+$180.00<br/>
+Ultraboost Shoes<br/>
+$180.00<br/>
+Ultraboost Laceless Shoes<br/>
+$200.00<br/>
+Ultraboost Uncaged Shoes<br/>
+$180.00<br/>
+Ultraboost Uncaged Shoes<br/>
+Ultraboost Uncaged Shoes<br/>
+<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given user is on addidas application</div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects shopnow</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_1adn3nh68cdjm588.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see shop by dropby</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_610x2rjdfq4p589.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects 'Men' category</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user selects 'Shoes' product category</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user select 'Running' of product</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see the product result</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a value greater than &lt;0&gt;
+     Actual: &lt;4&gt; was greater than &lt;0&gt; <a href="../img/AddidasOrderVerification_gdkopodqjtt7590.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects '3' product from product list</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see product details matching correctly</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "Ultraboost Uncaged Shoes"
+     Actual: was "Ultraboost Uncaged Shoes" <a href="../img/AddidasOrderVerification_1mygac7f7zdkt591.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects buy now</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then size chart should show up.</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_11xy4b5ij816m592.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user select '7.5' size</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user select addtoCart</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then product has been added to cart</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "Ultraboost Uncaged Shoes"
+     Actual: was "Ultraboost Uncaged Shoes" <a href="../img/AddidasOrderVerification_1x496yoducbbt593.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "$180.00"
+     Actual: was "$180.00" <a href="../img/AddidasOrderVerification_11e5aup26ztsw594.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_dw3oundi6nr595.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_1tje1ky8haszt596.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_n17cz060t22w597.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_n2uyzsoygqht598.png" target="_blank">[View Screenshot]</a> </div></div></div><br/>
+</div>
+</td>
+<td></td>
+<td>94</td>
+<td>com.qmetry.qaf.automation.step.client.DataDrivenScenario@3e8</td></tr>
+<tr>
+<td title='com.qmetry.qaf.automation.step.client.DataDrivenScenario.AddidasOrderVerification()'><b>AddidasOrderVerification</b><br>Test class: com.qmetry.qaf.automation.step.client.DataDrivenScenario (AddidasOrderVerification)<br>Test method: end to end<br>Parameters: {genderOrAge=Men, prodcCategory=Shoes, prodPurpose=Soccer, prodNumber=1, size=10}<br/>
+<a href="#Output-1660325375" onClick='toggleBox("Output-1660325375", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1660325375" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1660325375">
+Copa 18.1 Firm Ground Cleats<br/>
+$200.00<br/>
+Copa Tango 18.1 Shoes<br/>
+$130.00<br/>
+Predator 18+ Firm Ground Cleats<br/>
+$300.00<br/>
+Predator Tango 18+ Shoes<br/>
+$200.00<br/>
+Copa Tango 18.1 Shoes<br/>
+Copa Tango 18.1 Shoes<br/>
+<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given user is on addidas application</div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects shopnow</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_1vcn4j9pnsuun599.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see shop by dropby</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_gssn7hfjh56b600.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects 'Men' category</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user selects 'Shoes' product category</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user select 'Soccer' of product</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see the product result</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a value greater than &lt;0&gt;
+     Actual: &lt;4&gt; was greater than &lt;0&gt; <a href="../img/AddidasOrderVerification_nudvota6pu85601.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects '1' product from product list</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see product details matching correctly</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "Copa Tango 18.1 Shoes"
+     Actual: was "Copa Tango 18.1 Shoes" <a href="../img/AddidasOrderVerification_y3ofdz3qimak602.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects buy now</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then size chart should show up.</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_1hq7ynwuivlvr603.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user select '10' size</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user select addtoCart</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then product has been added to cart</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "Copa Tango 18.1 Shoes"
+     Actual: was "Copa Tango 18.1 Shoes" <a href="../img/AddidasOrderVerification_1pybjf0aw3xk5604.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "$130.00"
+     Actual: was "$130.00" <a href="../img/AddidasOrderVerification_1fzwhw142phbz605.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_g4nze60rd57a606.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_xxfxc0xs3lob607.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_1pdb178bokcvl608.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_16ourvvdko3nj609.png" target="_blank">[View Screenshot]</a> </div></div></div><br/>
+</div>
+</td>
+<td></td>
+<td>72</td>
+<td>com.qmetry.qaf.automation.step.client.DataDrivenScenario@3e8</td></tr>
+<tr>
+<td title='com.qmetry.qaf.automation.step.client.DataDrivenScenario.AddidasOrderVerification()'><b>AddidasOrderVerification</b><br>Test class: com.qmetry.qaf.automation.step.client.DataDrivenScenario (AddidasOrderVerification)<br>Test method: end to end<br>Parameters: {genderOrAge=Men, prodcCategory=Shoes, prodPurpose=Basketball, prodNumber=1, size=8}<br/>
+<a href="#Output-1544895390" onClick='toggleBox("Output-1544895390", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1544895390" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1544895390">
+Harden Vol. 1 LS Primeknit Shoes<br/>
+$160.00<br/>
+Harden Vol. 1 LS Primeknit Shoes<br/>
+$160.00<br/>
+Harden Vol. 1 LS Primeknit Shoes<br/>
+$160.00<br/>
+Pensole Harden B/E Shoes<br/>
+$115.00<br/>
+Harden Vol. 1 LS Primeknit Shoes<br/>
+Harden Vol. 1 LS Primeknit Shoes<br/>
+<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given user is on addidas application</div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects shopnow</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_2vxklbn5awnk610.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see shop by dropby</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_1qbcahek0atp6611.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects 'Men' category</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user selects 'Shoes' product category</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user select 'Basketball' of product</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see the product result</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a value greater than &lt;0&gt;
+     Actual: &lt;4&gt; was greater than &lt;0&gt; <a href="../img/AddidasOrderVerification_1oq2aivo1d3ux612.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects '1' product from product list</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see product details matching correctly</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "Harden Vol. 1 LS Primeknit Shoes"
+     Actual: was "Harden Vol. 1 LS Primeknit Shoes" <a href="../img/AddidasOrderVerification_1dmrqoyw7k4bs613.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects buy now</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then size chart should show up.</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_yo80xbkegbwe614.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user select '8' size</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user select addtoCart</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then product has been added to cart</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "Harden Vol. 1 LS Primeknit Shoes"
+     Actual: was "Harden Vol. 1 LS Primeknit Shoes" <a href="../img/AddidasOrderVerification_i2l2ag4337ly615.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "$160.00"
+     Actual: was "$160.00" <a href="../img/AddidasOrderVerification_1a98o2z964af9616.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_19cue43c96b7i617.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_1x46zw4mmufx9618.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_nclci0gttdlx619.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_qnbd9fthhud1620.png" target="_blank">[View Screenshot]</a> </div></div></div><br/>
+</div>
+</td>
+<td></td>
+<td>74</td>
+<td>com.qmetry.qaf.automation.step.client.DataDrivenScenario@3e8</td></tr>
+<tr>
+<td title='com.qmetry.qaf.automation.step.client.DataDrivenScenario.AddidasOrderVerification()'><b>AddidasOrderVerification</b><br>Test class: com.qmetry.qaf.automation.step.client.DataDrivenScenario (AddidasOrderVerification)<br>Test method: end to end<br>Parameters: {genderOrAge=Men, prodcCategory=Shoes, prodPurpose=Training, prodNumber=2, size=8}<br/>
+<a href="#Output-201274566" onClick='toggleBox("Output-201274566", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-201274566" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-201274566">
+Speed Trainer 3 Shoes<br/>
+$75.00<br/>
+Crazytrain Elite Shoes<br/>
+$140.00<br/>
+Icon Trainer Shoes<br/>
+$90.00<br/>
+Icon Trainer Shoes<br/>
+$90.00<br/>
+Icon Trainer Shoes<br/>
+Icon Trainer Shoes<br/>
+<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given user is on addidas application</div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects shopnow</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_14j1rg6t8dtc7621.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see shop by dropby</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_1vy745528haz0622.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects 'Men' category</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user selects 'Shoes' product category</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user select 'Training' of product</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see the product result</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a value greater than &lt;0&gt;
+     Actual: &lt;4&gt; was greater than &lt;0&gt; <a href="../img/AddidasOrderVerification_85q9rx1cjgpy623.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects '2' product from product list</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see product details matching correctly</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "Icon Trainer Shoes"
+     Actual: was "Icon Trainer Shoes" <a href="../img/AddidasOrderVerification_1uvgxl7v5qx9w624.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects buy now</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then size chart should show up.</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_1gpac53kxuib3625.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user select '8' size</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user select addtoCart</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then product has been added to cart</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "Icon Trainer Shoes"
+     Actual: was "Icon Trainer Shoes" <a href="../img/AddidasOrderVerification_nmgibhmymyh626.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "$90.00"
+     Actual: was "$90.00" <a href="../img/AddidasOrderVerification_fmfj543xsuh3627.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_x1qwf31931fu628.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_12u0y8fc1g43i629.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_58v7f2tff4c6630.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_1786iszcpeq6d631.png" target="_blank">[View Screenshot]</a> </div></div></div><br/>
+</div>
+</td>
+<td></td>
+<td>77</td>
+<td>com.qmetry.qaf.automation.step.client.DataDrivenScenario@3e8</td></tr>
+<tr>
+<td title='com.qmetry.qaf.automation.step.client.DataDrivenScenario.AddidasOrderVerification()'><b>AddidasOrderVerification</b><br>Test class: com.qmetry.qaf.automation.step.client.DataDrivenScenario (AddidasOrderVerification)<br>Test method: end to end<br>Parameters: {genderOrAge=Men, prodcCategory=Apparel, prodPurpose=Jackets, prodNumber=2, size=M}<br/>
+<a href="#Output-611289995" onClick='toggleBox("Output-611289995", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-611289995" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-611289995">
+NMD Crew Sweatshirt<br/>
+$80.00<br/>
+NMD Crew Sweatshirt<br/>
+$80.00<br/>
+NMD Hoodie<br/>
+$90.00<br/>
+NMD Hoodie<br/>
+$90.00<br/>
+NMD Hoodie<br/>
+NMD Hoodie<br/>
+<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given user is on addidas application</div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects shopnow</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_q1cg0aa1fw0i632.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see shop by dropby</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_1kxz3gnq3y4a5633.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects 'Men' category</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user selects 'Apparel' product category</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user select 'Jackets' of product</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see the product result</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a value greater than &lt;0&gt;
+     Actual: &lt;4&gt; was greater than &lt;0&gt; <a href="../img/AddidasOrderVerification_115ouyd2mgl3r634.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects '2' product from product list</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see product details matching correctly</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "NMD Hoodie"
+     Actual: was "NMD Hoodie" <a href="../img/AddidasOrderVerification_1oxicrn24kr31635.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects buy now</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then size chart should show up.</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_1jlp9bphnpe9q636.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user select 'M' size</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user select addtoCart</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then product has been added to cart</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "NMD Hoodie"
+     Actual: was "NMD Hoodie" <a href="../img/AddidasOrderVerification_1ivvftsco4dd5637.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "$90.00"
+     Actual: was "$90.00" <a href="../img/AddidasOrderVerification_19z2dkfc478ju638.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_1wbo7vwm9ic3b639.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_aoze6pzr6c92640.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_b1en55c52px4641.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_142925qgjmhqi642.png" target="_blank">[View Screenshot]</a> </div></div></div><br/>
+</div>
+</td>
+<td></td>
+<td>77</td>
+<td>com.qmetry.qaf.automation.step.client.DataDrivenScenario@3e8</td></tr>
+<tr>
+<td title='com.qmetry.qaf.automation.step.client.DataDrivenScenario.AddidasOrderVerification()'><b>AddidasOrderVerification</b><br>Test class: com.qmetry.qaf.automation.step.client.DataDrivenScenario (AddidasOrderVerification)<br>Test method: end to end<br>Parameters: {genderOrAge=Men, prodcCategory=Apparel, prodPurpose=Jackets, prodNumber=2, size=M}<br/>
+<a href="#Output-2001115307" onClick='toggleBox("Output-2001115307", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2001115307" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2001115307">
+NMD Track Jacket<br/>
+$90.00<br/>
+NMD Pullover Jacket<br/>
+$180.00<br/>
+NMD Primaloft Track Jacket<br/>
+$160.00<br/>
+NMD Parka<br/>
+$180.00<br/>
+NMD Primaloft Track Jacket<br/>
+NMD Primaloft Track Jacket<br/>
+<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given user is on addidas application</div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects shopnow</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_12bggb8d05sup643.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see shop by dropby</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_8k36mz5aq0pj644.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects 'Men' category</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user selects 'Apparel' product category</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user select 'Jackets' of product</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see the product result</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a value greater than &lt;0&gt;
+     Actual: &lt;4&gt; was greater than &lt;0&gt; <a href="../img/AddidasOrderVerification_eaxr9d96o26r645.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects '2' product from product list</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see product details matching correctly</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "NMD Primaloft Track Jacket"
+     Actual: was "NMD Primaloft Track Jacket" <a href="../img/AddidasOrderVerification_sy2jupbd3qp0646.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects buy now</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then size chart should show up.</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_13yif8qbnluan647.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user select 'M' size</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user select addtoCart</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then product has been added to cart</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "NMD Primaloft Track Jacket"
+     Actual: was "NMD Primaloft Track Jacket" <a href="../img/AddidasOrderVerification_2d4ornfiigpb648.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "$160.00"
+     Actual: was "$160.00" <a href="../img/AddidasOrderVerification_j15bte80juau649.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_1mjxo16inm3mu650.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_12bhe02grgb8k651.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_1lwbbjegks1v5652.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_yzn7q2t6ehg8653.png" target="_blank">[View Screenshot]</a> </div></div></div><br/>
+</div>
+</td>
+<td></td>
+<td>74</td>
+<td>com.qmetry.qaf.automation.step.client.DataDrivenScenario@3e8</td></tr>
+<tr>
+<td title='com.qmetry.qaf.automation.step.client.DataDrivenScenario.AddidasOrderVerification()'><b>AddidasOrderVerification</b><br>Test class: com.qmetry.qaf.automation.step.client.DataDrivenScenario (AddidasOrderVerification)<br>Test method: end to end<br>Parameters: {genderOrAge=Women, prodcCategory=Shoes, prodPurpose=Running, prodNumber=2, size=7.5}<br/>
+<a href="#Output-1167088639" onClick='toggleBox("Output-1167088639", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1167088639" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1167088639">
+Ultraboost Shoes<br/>
+$180.00<br/>
+Ultraboost Shoes<br/>
+$180.00<br/>
+Ultraboost Shoes<br/>
+$180.00<br/>
+Ultraboost Shoes<br/>
+$180.00<br/>
+Ultraboost Shoes<br/>
+Ultraboost Shoes<br/>
+<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given user is on addidas application</div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects shopnow</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_1803oq1mrwu5s654.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see shop by dropby</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_z4i8s76tl2kx655.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects 'Women' category</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user selects 'Shoes' product category</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user select 'Running' of product</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see the product result</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a value greater than &lt;0&gt;
+     Actual: &lt;4&gt; was greater than &lt;0&gt; <a href="../img/AddidasOrderVerification_10ht0wsj1ysp2656.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects '2' product from product list</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see product details matching correctly</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "Ultraboost Shoes"
+     Actual: was "Ultraboost Shoes" <a href="../img/AddidasOrderVerification_he3tu5qj6nmi657.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects buy now</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then size chart should show up.</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_hdfm83rwbmr7658.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user select '7.5' size</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user select addtoCart</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then product has been added to cart</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "Ultraboost Shoes"
+     Actual: was "Ultraboost Shoes" <a href="../img/AddidasOrderVerification_8gna0ntauoan659.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "$180.00"
+     Actual: was "$180.00" <a href="../img/AddidasOrderVerification_93fqiuldwg86660.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_6xfgamxiijje661.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_1figx73iui449662.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_1vz1hcrfdf6pr663.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_1ll3656cnh5bx664.png" target="_blank">[View Screenshot]</a> </div></div></div><br/>
+</div>
+</td>
+<td></td>
+<td>78</td>
+<td>com.qmetry.qaf.automation.step.client.DataDrivenScenario@3e8</td></tr>
+<tr>
+<td title='com.qmetry.qaf.automation.step.client.DataDrivenScenario.AddidasOrderVerification()'><b>AddidasOrderVerification</b><br>Test class: com.qmetry.qaf.automation.step.client.DataDrivenScenario (AddidasOrderVerification)<br>Test method: end to end<br>Parameters: {genderOrAge=Women, prodcCategory=Apparel, prodPurpose=Tights, prodNumber=2, size=L}<br/>
+<a href="#Output-751608431" onClick='toggleBox("Output-751608431", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-751608431" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-751608431">
+3-Stripes Leggings<br/>
+$40.00<br/>
+Alphaskin 360 Tights<br/>
+$150.00<br/>
+3-Stripes Tights<br/>
+$40.00<br/>
+Trefoil Leggings<br/>
+$40.00<br/>
+3-Stripes Tights<br/>
+3-Stripes Tights<br/>
+<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given user is on addidas application</div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects shopnow</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_1uoi0sldqhoop665.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see shop by dropby</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_1eic6eztot820666.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects 'Women' category</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user selects 'Apparel' product category</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user select 'Tights' of product</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see the product result</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a value greater than &lt;0&gt;
+     Actual: &lt;4&gt; was greater than &lt;0&gt; <a href="../img/AddidasOrderVerification_d62bckon8n9l667.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects '2' product from product list</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see product details matching correctly</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "3-Stripes Tights"
+     Actual: was "3-Stripes Tights" <a href="../img/AddidasOrderVerification_13jmlf2b59ixv668.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects buy now</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then size chart should show up.</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_okworp2tbhy6669.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user select 'L' size</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user select addtoCart</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then product has been added to cart</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "3-Stripes Tights"
+     Actual: was "3-Stripes Tights" <a href="../img/AddidasOrderVerification_1vomtfb6o4a2l670.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "$40.00"
+     Actual: was "$40.00" <a href="../img/AddidasOrderVerification_obl0l19rutvq671.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_ri6mwrytrfif672.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_1emvc8c8mcz97673.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_89nztcrrtxeq674.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_1k4ldbnr6meyy675.png" target="_blank">[View Screenshot]</a> </div></div></div><br/>
+</div>
+</td>
+<td></td>
+<td>77</td>
+<td>com.qmetry.qaf.automation.step.client.DataDrivenScenario@3e8</td></tr>
+<tr>
+<td title='com.qmetry.qaf.automation.step.client.DataDrivenScenario.AddidasOrderVerification()'><b>AddidasOrderVerification</b><br>Test class: com.qmetry.qaf.automation.step.client.DataDrivenScenario (AddidasOrderVerification)<br>Test method: end to end<br>Parameters: {genderOrAge=Kids, prodcCategory=Youth (8-14), prodPurpose=Boys Shoes, prodNumber=1, size=4.5}<br/>
+<a href="#Output-893523498" onClick='toggleBox("Output-893523498", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-893523498" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-893523498">
+X_PLR Shoes<br/>
+$46.00<br/>
+Superstar Shoes<br/>
+$70.00<br/>
+Gazelle Shoes<br/>
+$46.00<br/>
+UltraBOOST Shoes<br/>
+$160.00<br/>
+Superstar Shoes<br/>
+Superstar Shoes<br/>
+<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given user is on addidas application</div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects shopnow</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_v8a9owddp1i4676.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see shop by dropby</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_1srtczktu1tcz677.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects 'Kids' category</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user selects 'Youth (8-14)' product category</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user select 'Boys Shoes' of product</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see the product result</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a value greater than &lt;0&gt;
+     Actual: &lt;4&gt; was greater than &lt;0&gt; <a href="../img/AddidasOrderVerification_d261kvkkysh2678.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects '1' product from product list</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then user should see product details matching correctly</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "Superstar Shoes"
+     Actual: was "Superstar Shoes" <a href="../img/AddidasOrderVerification_1ix1zr4pynd5f679.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user selects buy now</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then size chart should show up.</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_1mj77n4xym2rh680.png" target="_blank">[View Screenshot]</a> </div></div><div  class="teststeppass"><span class="teststeppass-label">T </span>When user select '4.5' size</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And user select addtoCart</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then product has been added to cart</div><div style="display:block;margin-left:10px;"><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "Superstar Shoes"
+     Actual: was "Superstar Shoes" <a href="../img/AddidasOrderVerification_jicywpu4y2hc681.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: a string containing "$70.00"
+     Actual: was "$70.00" <a href="../img/AddidasOrderVerification_lk5jpl3uwfkw682.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_1t86zu3puhi0l683.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_g4vh5oq5l42y684.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>Expected productsearch on homepage present : Actual productsearch on homepage present <a href="../img/AddidasOrderVerification_17hwzj5td4977685.png" target="_blank">[View Screenshot]</a> </div><div  class="pass"><span class="pass-label">P </span>
+Expected: &lt;true&gt;
+     Actual: was &lt;true&gt; <a href="../img/AddidasOrderVerification_16drfjfz6pfsc686.png" target="_blank">[View Screenshot]</a> </div></div></div><br/>
+</div>
+</td>
+<td></td>
+<td>116</td>
+<td>com.qmetry.qaf.automation.step.client.DataDrivenScenario@3e8</td></tr>
+</table><p>
+</body>
+</html>

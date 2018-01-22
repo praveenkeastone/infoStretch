@@ -1,0 +1,14 @@
+#surefire
+#Wed Jan 17 17:13:55 IST 2018
+selenium.screenshots.dir=test-results/17_Jan_2018_11_43_AM/img
+json.report.dir=test-results/17_Jan_2018_11_43_AM/json
+outputDir=test-results/17_Jan_2018_11_43_AM
+log4j.configuration=file\:///C\:\\Users\\praveenkumar.dm\\QASWorkspace1\\AddidasMobile/resources/log4j.properties
+selenium.screenshots.relative.path=../img
+org.uncommons.reportng.xml-dialect=testng
+user.dir=C\:\\Users\\praveenkumar.dm\\QASWorkspace1\\AddidasMobile
+localRepository=C\:\\Users\\praveenkumar.dm\\.m2\\repository
+basedir=C\:\\Users\\praveenkumar.dm\\QASWorkspace1\\AddidasMobile
+test.results.dir=test-results/17_Jan_2018_11_43_AM/html
+org.uncommons.reportng.escape-output=false
+json.report.root.dir=test-results

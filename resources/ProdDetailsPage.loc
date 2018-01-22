@@ -1,0 +1,7 @@
+prodname.proddetails.addidas = {\"locator\":\"xpath=//android.widget.TextView[@resource-id='com.adidas.app:id/product_name_text']\",\"desc\":\"prodname on productdetails\"}
+buybutton.proddetails.addidas = {\"locator\":\"id=com.adidas.app:id/layout_buy_button\",\"desc\":\"buybutton on productdetails\"}
+navigatebutton.proddetails.addidas = {\"locator\":\"accessibility id=Navigate up\",\"desc\":\"navigatebutton on productdetails\"}
+sizechart.proddetail.addidas = {\"locator\":\"xpath=//android.widget.TextView[@text='%s']\",\"desc\":\"sizechart on productdetails\"}
+paybutton.productdetails.addidas = {\"locator\":\"xpath=(//android.widget.ImageButton)[2]\",\"desc\":\"paybutton on productdetails\"}
+addtocart.proddetail.addidas = {\"locator\":\"xpath=//android.widget.ImageButton\",\"desc\":\"addtocart on productdetails\"}
+sizechartview.detailpage.addidas = {\"locator\":\"xpath=//android.widget.LinearLayout[@resource-id='com.adidas.app:id/size_selector']\",\"desc\":\"sizecharview on productdetails\"}

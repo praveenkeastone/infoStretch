@@ -1,0 +1,3 @@
+component.searchresult.addidas = {\"locator\":\"xpath=//android.widget.RelativeLayout[@resource-id='com.adidas.app:id/root_view']\",\"desc\":\"resultcomponent on searchresult\"}
+prodname.searchresult.addidas = {\"locator\":\"xpath=//android.widget.TextView[@resource-id='com.adidas.app:id/product_name_text']\",\"desc\":\"prodname on searchresult\"}
+prodprice.searchresult.addidas = {\"locator\":\"xpath=//android.widget.TextView[@resource-id='com.adidas.app:id/product_name_price']\",\"desc\":\"prodprice on searchresult\"}

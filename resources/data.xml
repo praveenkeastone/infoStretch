@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<product>
+
+<category>
+<genderOrAge>Men</genderOrAge>
+<prodcCategory>Shoes</prodcCategory>
+<prodPurpose>Running</prodPurpose>
+<prodNumber>3</prodNumber>
+<size>7.5</size>
+</category> 
+ 
+<!-- <category>
+<genderOrAge>Men</genderOrAge>
+<prodcCategory>Shoes</prodcCategory>
+<prodPurpose>Soccer</prodPurpose>
+<prodNumber>1</prodNumber>
+<size>10</size>
+</category>  -->
+
+<category>
+<genderOrAge>Men</genderOrAge>
+<prodcCategory>Shoes</prodcCategory>
+<prodPurpose>Basketball</prodPurpose>
+<prodNumber>1</prodNumber>
+<size>8</size>
+</category>
+  
+<category>
+<genderOrAge>Men</genderOrAge>
+<prodcCategory>Shoes</prodcCategory>
+<prodPurpose>Training</prodPurpose>
+<prodNumber>2</prodNumber>
+<size>8</size>
+</category>   
+
+<category>
+<genderOrAge>Men</genderOrAge>
+<prodcCategory>Apparel</prodcCategory>
+<prodPurpose>Jackets</prodPurpose>
+<prodNumber>2</prodNumber>
+<size>M</size>
+</category>
+<category>
+<genderOrAge>Men</genderOrAge>
+<prodcCategory>Apparel</prodcCategory>
+<prodPurpose>Jackets</prodPurpose>
+<prodNumber>2</prodNumber>
+<size>M</size>
+</category>
+
+
+  <category>
+<genderOrAge>Women</genderOrAge>
+<prodcCategory>Shoes</prodcCategory>
+<prodPurpose>Running</prodPurpose>
+<prodNumber>2</prodNumber>
+<size>7.5</size>
+</category> 
+
+<category>
+<genderOrAge>Women</genderOrAge>
+<prodcCategory>Apparel</prodcCategory>
+<prodPurpose>Tights</prodPurpose>
+<prodNumber>2</prodNumber>
+<size>L</size>
+</category>
+
+ <category>
+<genderOrAge>Kids</genderOrAge>
+<prodcCategory>Youth (8-14)</prodcCategory>
+<prodPurpose>Boys Shoes</prodPurpose>
+<prodNumber>1</prodNumber>
+<size>4.5</size>
+</category>
+
+
+</product>

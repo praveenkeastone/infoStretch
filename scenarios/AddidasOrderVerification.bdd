@@ -1,0 +1,20 @@
+
+
+SCENARIO: AddidasOrderVerification
+META-DATA: {"description":"end to end","groups":["P1","P2","SMOKE"],"key":"category"}
+	
+	Given user is on addidas application
+	When user selects shopnow
+	Then user should see shop by dropby
+	When user selects '${genderOrAge}' category
+	And user selects '${prodcCategory}' product category
+	And user select '${prodPurpose}' of product
+	Then user should see the product result
+	When user selects '${prodNumber}' product from product list
+	Then user should see product details matching correctly
+	When user selects buy now
+	Then size chart should show up.
+	When user select '${size}' size
+	And user select addtoCart
+	Then product has been added to cart		
+END
